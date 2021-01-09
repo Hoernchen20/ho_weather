@@ -23,7 +23,7 @@
 /* Private define ----------------------------------------------------*/
 #define SENDER_PRIO (THREAD_PRIORITY_MAIN - 1)
 #define RECV_MSG_QUEUE (4U)
-#define ON_TIME_S 6
+#define ON_TIME_S 3
 #define PM_LOCK_LEVEL (1)
 
 #define ADC_VREF_INT 7
@@ -382,7 +382,7 @@ void init_unused_pins(void)
         //GPIO_PIN(PORT_C, 7), DIO1
         //GPIO_PIN(PORT_C, 8), DIO2
         //GPIO_PIN(PORT_C, 9), RESET
-        GPIO_PIN(PORT_C, 10),
+        //GPIO_PIN(PORT_C, 10), 1Wire
         GPIO_PIN(PORT_C, 11),
         GPIO_PIN(PORT_C, 12),
         GPIO_PIN(PORT_C, 13),
