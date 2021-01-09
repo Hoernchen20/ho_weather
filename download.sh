@@ -1,3 +1,4 @@
 #!/bin/bash
-arm-none-eabi-objcopy -O ihex bin/bluepill/ho_weather.elf bin/bluepill/ho_weather.hex
-~/Downloads/stm32flash/./stm32flash -w bin/bluepill/ho_weather.hex -v /dev/ttyUSB0 -b 576000
+~/Downloads/stm32flash/./stm32flash /dev/ttyUSB0 -j
+~/Downloads/stm32flash/./stm32flash /dev/ttyUSB0 -k
+~/Downloads/stm32flash/./stm32flash /dev/ttyUSB0 -e 0 -w bin/nucleo-l073rz/ho_weather.bin
